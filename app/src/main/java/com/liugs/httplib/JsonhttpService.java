@@ -39,7 +39,7 @@ public class JsonhttpService implements IhttpService{
             urlConnection.setReadTimeout(3000);// 响应时间
             urlConnection.setDoInput(true);
             urlConnection.setDoOutput(true);
-            urlConnection.setRequestMethod("POST");
+            urlConnection.setRequestMethod("GET");
             urlConnection.setRequestProperty("Content-Type","application/json;charset/utf-8");
             urlConnection.connect();
             // 发送请求字节流

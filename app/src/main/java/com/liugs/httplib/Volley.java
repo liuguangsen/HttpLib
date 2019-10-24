@@ -6,6 +6,5 @@ public class Volley {
         IHttpListener httpListener = new JsonHttpListener<M>(response, listener);
         HttpTask<T> httpTask = new HttpTask<T>(request, url, ihttpService, httpListener);
         ThreadPoolManager.getInstance().execute(httpTask);
-
     }
 }
